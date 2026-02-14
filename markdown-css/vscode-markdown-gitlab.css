@@ -1,0 +1,208 @@
+/* GitLab 스타일 마크다운 CSS */
+ 
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #303030;
+  background-color: #ffffff;
+  margin: 0;
+  padding: 0;
+}
+ 
+.vscode-body {
+  padding: 20px;
+  max-width: 100%;
+  margin: 0 auto;
+  background-color: #ffffff;
+}
+ 
+/* 헤딩 */
+h1 {
+  font-size: 28px;
+  font-weight: 600;
+  margin: 20px 0 16px 0;
+  padding-bottom: 0.3em;
+  border-bottom: 1px solid #dbdbdb;
+  color: #303030;
+}
+ 
+h2 {
+  font-size: 24px;
+  font-weight: 600;
+  margin: 24px 0 16px 0;
+  padding-bottom: 0.3em;
+  border-bottom: 1px solid #dbdbdb;
+  color: #303030;
+}
+ 
+h3 {
+  font-size: 20px;
+  font-weight: 600;
+  margin: 20px 0 16px 0;
+  color: #303030;
+}
+ 
+h4 {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 18px 0 14px 0;
+  color: #303030;
+}
+ 
+h5 {
+  font-size: 16px;
+  font-weight: 600;
+  margin: 16px 0 12px 0;
+  color: #303030;
+}
+ 
+h6 {
+  font-size: 14px;
+  font-weight: 600;
+  margin: 14px 0 10px 0;
+  color: #303030;
+}
+ 
+/* 문단 */
+p {
+  margin: 16px 0;
+}
+ 
+/* 링크 */
+a {
+  color: #0066cc;
+  text-decoration: none;
+}
+ 
+a:hover {
+  text-decoration: underline;
+}
+ 
+/* 코드 */
+code {
+  background-color: #f6f8fa;
+  border: 1px solid #d1d9e0;
+  border-radius: 3px;
+  padding: 0.2em 0.4em;
+  font-family: D2Coding, "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+  font-size: 12px;
+  color: #d73a49;
+}
+ 
+pre {
+  background-color: #f6f8fa;
+  border: 1px solid #d1d9e0;
+  border-radius: 3px;
+  padding: 16px;
+  overflow: auto;
+  font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+  font-size: 12px;
+  line-height: 1.45;
+  margin: 16px 0;
+}
+ 
+pre code {
+  background: none;
+  border: none;
+  padding: 0;
+  color: inherit;
+}
+ 
+/* 인용문 */
+blockquote {
+  border-left: 4px solid #dbdbdb;
+  padding: 0 16px;
+  margin: 16px 0;
+  color: #6a737d;
+}
+ 
+blockquote p {
+  margin: 0;
+}
+ 
+/* 목록 */
+ul,
+ol {
+  padding-left: 2em;
+  margin: 16px 0;
+}
+ 
+li {
+  margin: 4px 0;
+}
+ 
+ul li::marker {
+  color: #303030;
+}
+ 
+ol li::marker {
+  color: #303030;
+}
+ 
+/* 테이블 */
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 16px 0;
+}
+ 
+th,
+td {
+  border: 1px solid #dbdbdb;
+  padding: 6px 13px;
+}
+ 
+th {
+  background-color: #f6f8fa;
+  font-weight: 600;
+}
+ 
+tr:nth-child(even) {
+  background-color: #f6f8fa;
+}
+ 
+/* 구분선 */
+hr {
+  border: none;
+  border-top: 1px solid #dbdbdb;
+  margin: 24px 0;
+}
+ 
+/* 이미지 */
+img {
+  max-width: 100%;
+  height: auto;
+}
+ 
+/* 강조 */
+strong {
+  font-weight: 600;
+}
+ 
+em {
+  font-style: italic;
+}
+ 
+/* 체크박스 리스트 */
+ul.contains-task-list {
+  list-style-type: none;
+  padding-left: 0;
+}
+ 
+ul.contains-task-list li.task-list-item {
+  padding-left: 0;
+  margin-left: 0;
+}
+ 
+.task-list-item-checkbox {
+  margin-right: 8px;
+}
+ 
+/* 반응형 */
+@media (max-width: 768px) {
+  .vscode-body {
+    padding: 10px;
+  }
+}
